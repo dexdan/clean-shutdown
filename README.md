@@ -2,6 +2,8 @@
 
 `clean-shutdown` is a simple daemon that monitors a user-specified GPIO pin and triggers a clean software shutdown when that pin is asserted low. It offers ways to customise the behaviour of the shutdown process to fit most use-cases.
 
+***This version has a modification, by @dexdan, to work with https://github.com/winemug/omnipy/ to avoid shutdown occurring while the omnipy system is talking to a pod. Otherwise it is the same as https://github.com/pimoroni/clean-shutdown. 
+
 ## Installation
 
 The `setup.sh` script provided in this repository can be used to set your preference of GPIO pin to monitor in order to initiate the shutdown. To install support for a specific product however, such as OnOff SHIM or Zero LiPo, we recommend you use the one-line installers listed further down the page.
