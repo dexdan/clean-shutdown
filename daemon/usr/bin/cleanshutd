@@ -87,7 +87,7 @@ while true; do
             echo $msg
             wall $msg
             daemon="off"
-            python3 /home/pi/omnipy/omni.py shutdown  #To shutdown pi safely but after pod comms currently underway       
+            python3 /home/pi/omnipy/omni.py shutdown && shutdown -h #To shutdown pi safely but after pod comms currently underway       
             # shutdown -h +$shutdown_delay
             break
         fi
